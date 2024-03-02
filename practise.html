@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>kk</li>
+        <li>11</li>
+        <li>ii</li>
+    </ul>
+    <ul id="hello">
+        <li>mm</li>
+        <li onclick="kk(event)">nn</li>
+        <li>pp</li>
+    </ul>
+</body>
+<script>
+    let a=document.createElement("h1")
+    a.innerText="hello world"
+    a.style.color="red"
+    document.body.appendChild(a)
+    // document.querySelector("#hello").querySelector("li:nth-child(2)").addEventListener("click",function(e){
+    //     kk(e.target)
+    // })
+    function kk(a){
+        a.target.parentNode.remove() 
+    }
+</script>
+</html>
